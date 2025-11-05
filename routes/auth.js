@@ -2,7 +2,7 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import nodemailer from "nodemailer";
- import { validate } from "../middleware/auth.val.middleware.js";
+ import { validate } from "../middleware/validateMiddleware.js";
  import { loginSchema, registerSchema } from "../validator/auth.validator.js";
 import prisma from "../configs/prisma.js";
 import jwtConfig from "../configs/jwt.config.js";
